@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Less2 {
 
@@ -10,7 +11,7 @@ public class Less2 {
                 arr[i] = 1;
             }
         }
-        System.out.println(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
     public static void complArr() {
@@ -18,7 +19,7 @@ public class Less2 {
         for (int i = 1; i < arr.length ; i++) {
             arr[i+1] = arr[i] + 3;
         }
-        System.out.println(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
     public static void lesSixmultiplybytwoArr() {
@@ -28,6 +29,6 @@ public class Less2 {
                 arr [i] = arr [i] * 2;
             }
         }
-        System.out.println(arr);
+        System.out.println(Arrays.toString(arr));
     }
     }
