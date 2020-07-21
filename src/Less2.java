@@ -32,13 +32,11 @@ public class Less2 {
         System.out.println(Arrays.toString(arr));
     }
     public static void diagonalElementsOfaUnit(String[] args) {
-        int a = 10;
-        int b = 10;
-        int [][] arr = new int[a][b];
+        int [][] arr = new int[10][10];
         for (int i = 0; i < arr.length; i++) {
-            if (a == b){
-                arr [a][b] = 1;
+            arr [i][i] = 1;
             }
+        System.out.println(Arrays.toString(arr));
         }
-        }
+
     }
