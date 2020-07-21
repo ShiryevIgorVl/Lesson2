@@ -14,4 +14,11 @@ public class Less2 {
         System.out.println(Arrays.toString(arr));
     }
 
+    public static void complArr() {
+        int [] arr = new arr [8];
+        for (int i = 0; i <= arr.length ; i++) {
+            arr[i+1] = arr[i] + 3;
+        }
+        System.out.println(Arrays.toString(arr));
+    }
 }
