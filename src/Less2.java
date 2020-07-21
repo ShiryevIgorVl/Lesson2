@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class Less2 {
 
@@ -11,14 +10,14 @@ public class Less2 {
                 arr[i] = 1;
             }
         }
-        System.out.println(Arrays.toString(arr));
+        System.out.println(arr);
     }
 
     public static void complArr() {
-        int [] arr = new arr [8];
+        int [] arr = new int[8];
         for (int i = 0; i <= arr.length ; i++) {
             arr[i+1] = arr[i] + 3;
         }
-        System.out.println(Arrays.toString(arr));
+        System.out.println(arr);
     }
 }
