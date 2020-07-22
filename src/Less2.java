@@ -17,7 +17,7 @@ public class Less2 {
     public static void complArr(String[] args) {
         int[] arr = new int[8];
         for (int i = 1; i < arr.length; i++) {
-            arr[i + 1] = arr[i] + 3;
+            arr[i] = arr[i-1] + 3;
         }
         System.out.println(Arrays.toString(arr));
     }
@@ -32,13 +32,18 @@ public class Less2 {
         System.out.println(Arrays.toString(arr));
     }
 
-    public static void diagonalElementsOfaUnit(String[] args) {
-        int[][] arr = new int[10][10];
+    public static void main(String[] args) {
+        int[][] arr = new int[4][4];
         for (int i = 0; i < arr.length; i++) {
-            arr[i][i] = 1;
-            arr[arr.length - 1 - i][i] = 1;
+            for (int j = 0; j < arr.length; j++) {
+                arr[i][i] = 1;
+                arr[i][arr.length - 1 - i] = 1;
+                System.out.printf("%2d", arr[i][j]);
+            }
+            System.out.println();
+            }
 
         }
-        System.out.println(Arrays.toString(arr));
+
     }
-}
+
